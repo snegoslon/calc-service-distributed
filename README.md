@@ -78,6 +78,9 @@ curl --location 'http://localhost:8080/api/v1/calculate' --data '{"expression": 
 
 curl http://localhost:8080/api/v1/expressions/1
 
+```
+
+```json
 {
     "expression": {
         "id": "1",
@@ -100,7 +103,9 @@ curl --location 'http://localhost:8080/api/v1/calculate' --data '{"expression": 
 ```bash
 
 curl http://localhost:8080/api/v1/expressions/2
+```
 
+```json
 {
     "expression": {
         "id": "2",
@@ -115,16 +120,19 @@ curl http://localhost:8080/api/v1/expressions/2
 ```bash
 
 curl http://localhost:8080/api/v1/expressions/9897978
+```
 
+```json
 {"error":"Expression 9897978 not found"}
 ```
 
 #### Сценарий 4 - Вывод всех выражений
 
 ```bash
-
 curl http://localhost:8080/api/v1/expressions
+```
 
+```json
 {
   "expressions": [
     {
